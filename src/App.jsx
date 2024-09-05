@@ -1,27 +1,17 @@
+import TabsPart from "./Components/Tabs";
+
 function App() {
   return (
-    <div className="bg-black border border-black">
-      <div className="grid grid-cols-2 grid-rows-2 gap-10 m-10 p-5 rounded-2xl bg-[#1a1a1b]">
-        <div className="row-span-2 border bg-[#525252] rounded-2xl "></div>
-        <div className="">
-          <div></div>
-          <div>
-            <div role="tablist" className="tabs tabs-boxed">
-              <a role="tab1" className="tab">
-                About Me
-              </a>
-              <a role="tab2" className="tab ">
-                Experience
-              </a>
-              <a role="tab3" className="tab">
-                Recommended
-              </a>
-            </div>
+    <div className="bg-black border border-black ">
+      <div className="max-w-[1700px] mx-auto h-[100vh] p-10 bg-[#252525] flex gap-10">
+        <div className="row-span-2 border bg-[#525252] rounded-2xl w-1/2"></div>
+        <div className="w-1/2 flex flex-col gap-4">
+          <div className="bg-[#363C43] p-5 h-1/2 ">
+            <TabsPart />
           </div>
-          <div></div>
-        </div>
-        <div className="border">
-          <p>There</p>
+          <div className="border h-1/2 ">
+            <p>There</p>
+          </div>
         </div>
       </div>
     </div>
